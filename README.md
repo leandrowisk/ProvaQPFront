@@ -36,12 +36,10 @@ Antes de executar, tenha instalado:
 
 ## Instalação
 
-Clone o repositório
-Acesse a pasta raiz
-Instale as dependências com npm install
-Utilize a porta 3000 para não obter erros de CORS local
-Para subir o projeto localmente utilize: npm run dev -- -p 3000
-Acesse:
-http://localhost:3000
+- Clone o repositório
+- Acesse a pasta raiz
+- Instale as dependências com npm install
+- Utilize a porta 3000 para não obter erros de CORS local, Para subir o projeto localmente utilize: npm run dev -- -p 3000
+- Acesse: http://localhost:3000
 
 Frontend com fluxo de autenticação JWT, listagem e cadastro de pessoas e pesquisa de nacionalidade com base no nome.
