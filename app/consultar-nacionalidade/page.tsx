@@ -43,20 +43,17 @@ export default function PesquisarNacionalidade() {
           method: 'GET',
         }
       );
-
       if (!response.ok) {
         setErro('Erro ao consultar nacionalidade. Tente novamente.');
+      } else {
+        const data = await response.text();
+        try {
+          const json = JSON.parse(data);
+          setResultado(JSON.stringify(json, null, 2));
+        } catch {
+          setResultado(data);
+        }
       }
-
-      const data = await response.text();
-
-      try {
-        const json = JSON.parse(data);
-        setResultado(JSON.stringify(json, null, 2));
-      } catch {
-        setResultado(data);
-      }
-
     } catch (error) {
       setErro('Erro ao consultar nacionalidade. Tente novamente.');
     } finally {
