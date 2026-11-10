@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sistema de Gerenciamento — Frontend
 
-## Getting Started
+Aplicação web desenvolvida com **Next.js, React e TypeScript**, integrada a uma API REST em Spring Boot.
 
-First, run the development server:
+O sistema possui autenticação JWT e funcionalidades de gerenciamento de pessoas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologias utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- API REST com Spring Boot
+- Autenticação JWT
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Login com e-mail e senha
+- Autenticação via JWT
+- Proteção de páginas autenticadas
+- Redirecionamento para login quando a sessão expira
+- Cadastro de pessoas
+- Listagem de pessoas
+- Mensagens de sucesso e erro
+- Comunicação com a API REST
 
-## Learn More
+## Pré-requisitos
 
-To learn more about Next.js, take a look at the following resources:
+Antes de executar, tenha instalado:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js compatível com a versão do Next.js utilizada
+- npm
+- Git
+- Backend Spring Boot configurado e em execução
+- O email e senha do usuário permitido são: admin@admin.com e 12345, somente ele conseguirá logar.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Instalação
 
-## Deploy on Vercel
+Clone o repositório
+Acesse a pasta raiz
+Instale as dependências com npm install
+Utilize a porta 3000 para não obter erros de CORS local
+Para subir o projeto localmente utilize: npm run dev -- -p 3000
+Acesse:
+http://localhost:3000
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Frontend com fluxo de autenticação JWT, listagem e cadastro de pessoas e pesquisa de nacionalidade com base no nome.
