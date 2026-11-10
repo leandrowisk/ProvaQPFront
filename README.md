@@ -16,6 +16,8 @@ O sistema possui autenticação JWT e funcionalidades de gerenciamento de pessoa
 ## Funcionalidades
 
 - Login com e-mail e senha
+- <img width="1861" height="867" alt="image" src="https://github.com/user-attachments/assets/6ea2a707-d5b3-49a1-aa27-eef5639fcc1c" />
+
 - Autenticação via JWT
 - Proteção de páginas autenticadas
 - Redirecionamento para login quando a sessão expira
