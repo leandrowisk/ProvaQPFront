@@ -41,7 +41,6 @@ Antes de executar, tenha instalado:
 - npm
 - Git
 - Backend Spring Boot configurado e em execução
-- O email e senha do usuário permitido são: admin@admin.com e 12345, somente ele conseguirá logar.
 
 ## Instalação
 
@@ -50,6 +49,6 @@ Antes de executar, tenha instalado:
 - Instale as dependências com npm install
 - Utilize a porta 3000 para não obter erros de CORS local, Para subir o projeto localmente utilize: npm run dev -- -p 3000
 - Acesse: http://localhost:3000
-- Credenciais de acesso: admin@admin.com e 12345
+- Credenciais de acesso (somente esse usuário conseguirá logar): admin@admin.com e 12345
 
 Frontend com fluxo de autenticação JWT, listagem e cadastro de pessoas e pesquisa de nacionalidade com base no nome.
